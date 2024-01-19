@@ -1,0 +1,252 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImperialHal "The CEO"</title>
+  <style>
+
+html{
+  scroll-behavior: smooth;
+}
+.header-nav{
+  display: flex;
+  color: red;
+  justify-content: center;
+  padding: 5px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+body{
+  background-color: grey;
+  color: darkred;
+}
+.imgContainer{
+position: relative;
+max-width: 100%;
+}
+img{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 800px;
+  max-height: 800px
+}
+.capcenter {
+  position: absolute;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  text-align: center;
+}
+.bodyText{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 10px red;
+}
+.form{
+max-width: 800px;
+margin: auto;
+}
+.label, input, textarea{
+  display: flex;
+  margin-bottom: 10px;
+}
+.button{
+  background-color: darkred;
+}
+  </style>
+
+</head>
+<body>
+  <h1 class="header-nav">Phillip "Imperial Hal" Dosen</h1>
+    <nav class="nav">
+      <a href="#biography">Biography</a>
+      <a href="#career">Career</a>
+      <a href="#tournamentwins">Tournament Wins</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <aside>
+      <div class="imgContainer">
+      <img id="halimg" src="https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/04/26/TSM-ImperialHal-ALGS-Split-1-Playoffs.jpg" alt="hal.img">
+      <div class="capcenter"><caption class="capcenter">Phillip "Imperial Hal" Dosen at year 3 ALGS LAN</caption></div>
+    </aside>
+  </div>
+
+  <section id="biography" class="bodyText">
+    <h2>Biography</h2>
+    <h3>Getting into Apex Lengends 2019</h3>
+    <p>
+      Before becoming involved with Apex Legends, ImperialHal competed in H1Z1 as a Cloud9 player. His career was cut short by the
+       discontinuation of the H1Z1 Pro League, which shut down after just one split. Afterwards, ImperialHal attempted to compete in
+        Fortnite, but it was not a game that he enjoyed. When Apex Legends released a few months later, he shifted his focus to the 
+        new battle royale. He was signed by TSM alongside former H1Z1 competitors Taylor "THump" Humphries and Jose "ProdigyAces"
+         Soto on March 6th, 2019. This roster didn't remain for long, with THump and ProdigyAces being moved off of the starting 
+         roster for Mac "Albralelie" Beckwith and Jordan "Reps" Wolfe in the following months.
+    </p>
+    <p>
+      Together with his newly built roster, the first real test for ImperialHal would be at X Games — the first proper competition
+       featuring professional teams in a private lobby. Heading into the last game tied with Team Reciprocity on a 109 points, TSM 
+       scored a crucial top two placement alongside seven kills to secure themselves the X Games gold medal.
+    </p>
+    <p>
+      Next up was the Preseason Invitational, the kickoff major for Apex Legends that featured 80 teams from across the globe. TSM 
+      entered the tournament as one of the favourites, and advanced through the upper bracket to the grand finals. The grand finals
+       featured the newly made format of Match Point. Despite a rough start to the series, TSM still found themselves on Match Point
+        after the sixth game. The series went on for another 5 games, and in game 11, TSM secured the win by third-partying the 
+        fight between GamersOrigin and MVP at the end. With this win, ImperialHal and TSM were crowned the champions, and became 
+        back-to-back LAN winners.
+    </p>
+  </section>
+  <section id="career" class="bodyText">
+    <h2>Career</h2>
+    <h3>The Online Era 2020-2021</h3>
+    <p>With the newly introduced Apex Legends Global Series, TSM continued their domination at the North American Qualifier. 
+      Due to the COVID-19 pandemic, the upcoming Major in Texas was cancelled, and the Global Series moved to an online circuit. 
+      TSM won their first online event and continued to place well in subsequent tournaments. However, the team notably failed to 
+      pick up any big victories. As a result, TSM replaced Albralelie with Halo veteran Eric "Snip3down" Wrona. Together with 
+      the reformed team, ImperialHal continued their run at the top of the ALGS. They eventually placed third in the 2021 Online 
+      Championship.</p>
+
+      <p>It was in this era that a rivalry developed between ImperialHal and Christopher "sweetdreams" Sexton. Sweetdreams, who was 
+        a fellow H1Z1 competitor, was seen as almost an opposite of ImperialHal due to the way the two players captained their teams.
+         The two often battled it out for the top placements in online tournaments.</p>
+
+        <p>Near the end of 2021, ImperialHal had to find a new third player, as Snip3down left to compete in Halo Infinite. 
+          Snip3down was replaced by Evan "Verhulst" Verhulst, an up-and-coming player who was making a splash with Esports Arena.
+           This move proved to be successful, as they turned their first split in the ALGS Pro League around, even winning the 2022 
+           Split 1 North American Playoffs.</p>
+
+  </section>
+  <section class="bodyText">
+    <h3>Return to LANS and switching to controller</h3>
+    <p>In the latter half of the 2022 season, TSM finished 7th during the second Pro League split. This secured the team a spot in 
+      the 2022 Split 2 Playoffs, the first LAN event since the pandemic. TSM advanced through the group and bracket stages, but 
+      ultimately finished in 6th place in the grand finals. The following 2022 Championship saw a tougher run for the team, as they 
+      were upset in the winners bracket. They barely advanced to the finals with a 9th place result in the second round of losers, 
+      and were merely 4 points above elimination. TSM faltered in the Finals, failing to attain Match Point eligibility despite the 
+      series going to 9 games. However, their last game did shoot them up in the rankings, and they finished the competitive year in
+       7th place.</p>
+       <p>During the off-season, ImperialHal decided to change his input device. Despite being a mouse & keyboard user for the 
+        majority of his careeer, he agreed with the growing consensus that controller was superior due to the game's aim assist.
+         Although the switch seemed like a risky move, it also appeared to pay off. TSM came into the new competitive year with a 
+         strong regular season in the first Split of Pro League, becoming the first seed for the North American region at the Split 1 
+         Playoffs. They dominated in the group stages and made their way to the finals through winners. This time, TSM was able to 
+         acquire Match Point eligibity after the 5th game. In the 8th game of the series, they found themselves in a straight three 
+         versus three against Acend who were also on Match Point. ImperialHal found the first pick in the fight as he ascended with 
+         Horizon, allowing TSM to clean up and secure their third LAN victory.</p>
+
+         <p>The second Split of the year would be a tougher one as TSM struggled early on in the season, but with a much needed 
+          victory in the second half, they secured another appearance in the Playoffs in London. TSM looked to repeat their previous
+           success, once again qualifying for the finals with dominant group stage and bracket performances. The grand finals started
+            off well for TSM, but right on their tails were DarkZero Esports, who together with TSM became Match Point eligible after 
+            the third game. DarkZero proved to be specialists of the match point format, securing victory in seventh game. TSM 
+            finished behind them in second place.</p>
+
+            <p>DarkZero's victory ignited a new rivalry for ImperialHal, as now the Australian Rhys "Zer0" Perry had tied up the 
+              score, securing 3 LAN victories himself. This narrative set the stage for the 2023 Championship, which was the next 
+              opportunity for the competitors to seize the lead.</p>
+
+              <q>Honestly the passion was ignited after last LAN. I was kind of happy with second place, like I've been at the top 
+                for a while, and I feel like someone else is creeping up, like Zer0 and his team. After this last LAN I was like, I
+                 have to work even harder, I don't want them to pass me in terms of achievements. The passion is probably even 
+                 stronger than the prior two LANs. It's kind of like a rivalry now in a way. It used to be me and sweetdreams, now 
+                 it's just me and Zer0."
+                Phillip "ImperialHal" Dosen</q>
+
+                <p>Both TSM and DarkZero came into the Championship in top form. In the winners bracket, TSM and DarkZero found 
+                  themselves on the brink of an upset. TSM managed to recover, finding a win in the very last game to advance to the 
+                  finals. However, DarkZero was relegated to the losers bracket where they were ultimately eliminated, resulting in 
+                  an anticlimactic end for the rivalry that was built during the year between ImperialHal and Zer0.</p>
+
+                  <p>Five games into grand finals, TSM was performing poorly with only 22 points, putting them dead last and far 
+                    from Match Point. The team rebounded with three back-to-back victories — something almost unheard of in a battle
+                     royale — and won the tournament. ImperialHal was named the MVP of the event, cementing his place as one of the 
+                     best players. In September, the Esports Awards nominated him for Esports Controller Player of the Year, an 
+                     impressive feat considering he had only switched that year. In November, ImperialHal was also nominated for
+                      Best Esports Athlete by the Game Awards.</p>
+  </section>
+  <section id="tournamentwins" class="bodyText">
+    <h2>Tournament Wins</h2>
+    <h3>2019</h3>
+    <ul>
+      <li>EXP Invitaional- Apex Legends at X Games Minniapolis</li>
+      <li>Apex Legends Preseaon Invitational</li>
+    </ul>
+    <h3>2020</h3>
+    <ul>
+      <li>ALGS Online #2 -North America</li>
+    </ul>
+    <h3>2021</h3>
+    <ul>
+      <li>
+        ALGS Championship 2021 North America
+      </li>
+    </ul>
+    <h3>2022</h3>
+    <ul>
+      <li>ALGS Split 1 Playoffs North America</li>
+      <li>TwitchCon: Sandiego</li>
+      </ul>
+   <h3>2023</h3>
+    <ul>
+      <li>ALGS Split One Playoffs</li>
+      <li>ALGS Split 2 Playoffs</li>
+      <li>ALGS Championship</li>
+    </ul>
+  </section>
+  <footer>
+    <section id="contact">
+    <h4 class="form">Contact the Devloper</h4>
+    <form class="form" action="submit-form" method="post">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="30" rows="1"></textarea>
+      <button class="button" type="submit">Submit</button>
+    </form>
+  </section>
+  </footer>
+  
+</body>
+</html>
